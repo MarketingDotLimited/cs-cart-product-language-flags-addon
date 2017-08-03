@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>marketing_lang_flags</id>
+    <version>1.0</version>
+    <priority>4294967296</priority>
+    <position>0</position>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <name>لغات الألعاب</name>
+    <description>لغات الألعاب</description>
+    <language_variables>
+    <item lang="en" id="product_marketing_lang_flags">Languages</item>
+    <item lang="en" id="product_marketing_lang_flags_lang_available">Language available:</item>
+
+    <item lang="ar" id="product_marketing_lang_flags">اللغات</item>
+    <item lang="ar" id="product_marketing_lang_flags_lang_available">اللغات المتوفرة:</item>
+
+    </language_variables>
+    <queries>
+        <item for="install">
+             ALTER IGNORE TABLE  `?:products` ADD marketing_lang_flags VARCHAR(1000);
+        </item>
+        
+    </queries>
+
+</addon>
